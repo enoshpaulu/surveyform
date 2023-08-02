@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Application Form</h1>
+    <p id="description">Fill out this appication form, for your registration</p>
+    <form action="index.html" method="post" id="survey-form">
+        <fieldset>
+            <label for="first-name" class="information" id="name-label">First Name: <input type="text" name="first-name"
+                    placeholder="Enter Your First Name" id="name" required></label>
+            <label for="last-name">Last Name: <input type="text" name="last-name" placeholder="Enter Your Last Name"
+                    id="last-name" required></label>
+            <label for="email" id="email-label">Email ID: <input type="email" name="email"
+                    placeholder="Enter Your Email Address" id="email" required></label>
+            <label for="age" id="number-label">Age: <input id="number" type="number" name="age"
+                    placeholder="Enter Your Age" id="age" min="18" max="45" required value="age"> </label>
+            <label for="gender-type">Gender:
+                <input type="radio" name="gender-type" required class="inline" value="male"> Male
+                <input type="radio" name="gender-type" required class="inline" value="female"> Female
+                <input type="radio" name="gender-type" required class="inline" value="other"> Other
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="education">Your Education:
+                <select class="education" name="education" id="dropdown">
+                    <option value="0">Select from below</option>
+                    <option value="1">10th Standard</option>
+                    <option value="2">Intermediate</option>
+                    <option value="3">Degree/Graduation</option>
+                </select>
+            </label>
+            <label for="skills" class="skills" required> Your Technical Skills:(Check all the applies.)
+                <label><input type="checkbox" name="c" value="c" class="inline"> C / C++ </label>
+                <label><input type="checkbox" name="java" value="java" class="inline"> JAVA </label>
+                <label><input type="checkbox" name="python" value="python" class="inline"> Python </label>
+                <label><input type="checkbox" name="front-end" value="front-end" class="inline">
+                    Front-End-Development</label>
+                <label><input type="checkbox" name="back-end" value="back-end" class="inline">
+                    Back-End-Development</label>
+                <label><input type="checkbox" name="data-science" value="data-science" class="inline"> Data
+                    Science</label>
+                <label><input type="checkbox" name="machine-learning" value="machine-learning" class="inline"> Machine
+                    Learning </label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Any comments or suggestions?
+                <textarea name="name" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <label for="submit">
+                <input type="submit" name="submit" value="Submit" id="submit">
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
